@@ -18,6 +18,7 @@ typedef intptr_t ssize_t;
 		    {"pint", pint},   \
 		    {"pop", pop},     \
 		    {"swap", swap},   \
+                    {"add", _add},   \
 		{                     \
 			NULL, NULL      \
 		}                     \
@@ -75,6 +76,7 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 stack_t *add_node(stack_t **stack, const int n);
 int is_digit(char *string);
 stack_t *queue_node(stack_t **stack, const int n);
+void _add(stack_t **stack, unsigned int l_count);
 void pint(stack_t **stack, unsigned int l_count);
 void swap(stack_t **stack, unsigned int l_count);
 void free_stack(stack_t *stack);
