@@ -2,7 +2,7 @@
 
 
 /**
- * push - push element into the stack
+ * push - pushes element intp the stack
  * @stack: stack given by main
  * @l_count: amount of lines
  *
@@ -36,7 +36,7 @@ void push(stack_t **stack, unsigned int l_count)
 
 
 /**
-* pop - pops the very top element of the stack
+* pop - removes element on the top of the stack
 * @stack: stack given by main in start.c
 * @l_count: line number for error messages
 *
@@ -62,7 +62,7 @@ void pop(stack_t **stack, unsigned int l_count)
 
 
 /**
- * pall - prints the stack
+ * pall - prints all the elements in the stack
  * @stack: stack given by main in start.c
  * @l_count: amount of lines
  *
@@ -75,7 +75,7 @@ void pall(stack_t **stack, unsigned int l_count __attribute__((unused)))
 
 
 /**
- * pint - print the value at the top of the stack
+ * pint - prints the first element of the stack
  * @stack: stack given by main in start.c
  * @l_count: amount of lines
  *
@@ -94,7 +94,7 @@ void pint(stack_t **stack, unsigned int l_count)
 
 
 /**
- * swap -  swaps data from top to previous
+ * swap - swaps the first and second element of the stack 
  * @stack: stack given by main
  * @l_count: amount of lines
  *

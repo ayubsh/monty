@@ -69,7 +69,7 @@ int is_digit(char *string)
 
 
 /**
- * _add -  adds the first two nodes of the stack
+ * _add - adds the first and second element of the stack 
  * @stack: stack given by main
  * @l_count: line counter
  *
@@ -92,7 +92,7 @@ void _add(stack_t **stack, unsigned int l_count)
 
 
 /**
- * nop -  does nothing
+ * nop -  it does nothing
  * @stack: doesnt matter
  * @l_count: for nothing
  *
