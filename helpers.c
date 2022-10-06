@@ -89,3 +89,17 @@ void _add(stack_t **stack, unsigned int l_count)
 	pop(stack, l_count); /*For top node*/
 	(*stack)->n = result;
 }
+
+
+/**
+ * nop -  does nothing
+ * @stack: doesnt matter
+ * @l_count: for nothing
+ *
+ * Return: NOTHING
+ */
+void nop(stack_t **stack, unsigned int l_count)
+{
+	(void) stack;
+	(void) l_count;
+}

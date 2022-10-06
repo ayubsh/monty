@@ -19,6 +19,7 @@ typedef intptr_t ssize_t;
 		    {"pop", pop},     \
 		    {"swap", swap},   \
                     {"add", _add},   \
+                    {"nop", nop},   \
 		{                     \
 			NULL, NULL      \
 		}                     \
@@ -72,6 +73,7 @@ typedef struct instruction_s
 
 void push(stack_t **stack, unsigned int l_count);
 void pall(stack_t **stack, unsigned int l_count);
+void nop(stack_t **stack, unsigned int l_count);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 stack_t *add_node(stack_t **stack, const int n);
 int is_digit(char *string);
