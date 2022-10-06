@@ -15,7 +15,8 @@ typedef intptr_t ssize_t;
 	{                           \
 		{"push", push},       \
 		    {"pall", pall},   \
-		    {"pint", pint},    \
+		    {"pint", pint},   \
+		    {"pop", pop},     \
 		{                     \
 			NULL, NULL      \
 		}                     \
@@ -76,6 +77,7 @@ stack_t *queue_node(stack_t **stack, const int n);
 void pint(stack_t **stack, unsigned int l_count);
 void free_stack(stack_t *stack);
 size_t print_stack(const stack_t *stack);
+void pop(stack_t **stack, unsigned int l_count);
 
 void opcode(stack_t **stack, char *str, unsigned int l_count);
 
