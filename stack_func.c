@@ -72,3 +72,22 @@ void pall(stack_t **stack, unsigned int l_count __attribute__((unused)))
 {
 	print_stack(*stack);
 }
+
+
+/**
+ * pint - print the value at the top of the stack
+ * @stack: stack given by main in start.c
+ * @l_count: amount of lines
+ *
+ * Return: void
+ */
+void pint(stack_t **stack, unsigned int l_count)
+{
+	if (!stack || !(*stack))
+	{
+		fprintf(stderr, "L%d: can't pint, stack empty\n", l_count);
+		exit(EXIT_FAILURE);
+
+	}
+	printf("%d\n", (*stack)->n);
+}
